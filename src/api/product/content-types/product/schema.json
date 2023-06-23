@@ -44,6 +44,12 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "storefront": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::storefront.storefront",
+      "inversedBy": "products"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storefronts",
+  "info": {
+    "singularName": "storefront",
+    "pluralName": "storefronts",
+    "displayName": "Storefront"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "storefront": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "storefrontSlug": {
+      "type": "uid",
+      "targetField": "storefront",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "storefront"
+    }
+  }
+}
