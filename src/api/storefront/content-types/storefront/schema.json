@@ -4,21 +4,21 @@
   "info": {
     "singularName": "storefront",
     "pluralName": "storefronts",
-    "displayName": "Storefront"
+    "displayName": "Storefront",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "storefront": {
+    "storefrontName": {
       "type": "string",
       "required": true,
       "unique": true
     },
     "storefrontSlug": {
       "type": "uid",
-      "targetField": "storefront",
       "required": true
     },
     "products": {
