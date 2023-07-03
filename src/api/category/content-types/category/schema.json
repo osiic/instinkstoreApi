@@ -4,22 +4,23 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "categoryName": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "categorySlug": {
+    "slug": {
       "type": "uid",
-      "targetField": "categoryName",
-      "required": true
+      "required": true,
+      "targetField": "name"
     },
     "products": {
       "type": "relation",

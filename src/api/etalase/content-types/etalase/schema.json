@@ -1,31 +1,30 @@
 {
   "kind": "collectionType",
-  "collectionName": "storefronts",
+  "collectionName": "etalases",
   "info": {
-    "singularName": "storefront",
-    "pluralName": "storefronts",
-    "displayName": "Storefront",
-    "description": ""
+    "singularName": "etalase",
+    "pluralName": "etalases",
+    "displayName": "Etalase"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "storefrontName": {
+    "nama": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "storefrontSlug": {
+    "slug": {
       "type": "uid",
+      "targetField": "nama",
       "required": true
     },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "storefront"
+      "mappedBy": "etalase"
     }
   }
 }

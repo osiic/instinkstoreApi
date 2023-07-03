@@ -45,11 +45,21 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "storefront": {
+    "variants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::variant.variant",
+      "mappedBy": "products"
+    },
+    "etalase": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::storefront.storefront",
+      "target": "api::etalase.etalase",
       "inversedBy": "products"
+    },
+    "stock": {
+      "type": "integer",
+      "required": true
     }
   }
 }

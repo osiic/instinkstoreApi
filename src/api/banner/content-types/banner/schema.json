@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "bannerName": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "bannerImage": {
-      "allowedTypes": [
-        "images"
-      ],
+    "image": {
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

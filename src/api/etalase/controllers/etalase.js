@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * storefront controller
+ * etalase controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::storefront.storefront');
+module.exports = createCoreController('api::etalase.etalase');

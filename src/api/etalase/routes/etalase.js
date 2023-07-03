@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * storefront router
+ * etalase router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::storefront.storefront');
+module.exports = createCoreRouter('api::etalase.etalase');
