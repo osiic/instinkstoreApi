@@ -45,12 +45,6 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "variants": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::variant.variant",
-      "mappedBy": "products"
-    },
     "etalase": {
       "type": "relation",
       "relation": "manyToOne",
@@ -60,6 +54,12 @@
     "stock": {
       "type": "integer",
       "required": true
+    },
+    "variants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::variant.variant",
+      "mappedBy": "product"
     }
   }
 }
