@@ -23,13 +23,17 @@
     },
     "price": {
       "type": "biginteger",
-      "required": true
+      "required": true,
+      "default": "0"
     },
     "discount": {
-      "type": "integer"
+      "type": "integer",
+      "required": false
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true,
+      "default": "#### **「 DESCRIPTION 」**"
     },
     "image": {
       "type": "media",
@@ -60,6 +64,15 @@
       "relation": "oneToMany",
       "target": "api::variant.variant",
       "mappedBy": "product"
+    },
+    "secondPrice": {
+      "type": "biginteger",
+      "required": false,
+      "default": "0"
+    },
+    "secondDiscount": {
+      "type": "integer",
+      "required": false
     }
   }
 }
